@@ -1,9 +1,13 @@
+:root{
+	--main-color : purple;
+}
+
 body{
 	font: 18px/1.5 "Fira Sans OT", "Trebuchet MS", sans-serif;
 	padding: 1em 0.5em 0 5em;
 }
 h1{
-	color: purple;
+	color: var(--main-color);
 	font-size: 3em;
 	text-transform: uppercase;
 	letter-spacing:0.05em;
@@ -27,13 +31,12 @@ input[type="button"]{
 	margin-top:2em;
 	padding:1em 1.5em;
 	color:white;
-	background-color: purple;
-	border: 1px solid purple;
+	background-color: var(--main-color);
+	border: 1px solid var(--main-color);
 	border-radius:10px;
-	//outline: 2px solid purple;
 }
 input[type="button"]:hover{
-	color:purple;
+	color:var(--main-color);
 	font-weight: bold;
 	background-color: white;
 }

@@ -6,7 +6,12 @@ Au clic sur le bouton,
 */
 
 
-
+const buttonElt = document.getElementById("hello");
+buttonElt.addEventListener('click', (evt)=>{
+    const imgElt = document.createElement('img');
+    imgElt.src = "bonjour.jpg"
+    document.querySelector('.display').appendChild(imgElt);
+} );
 /*
 Chaque type d'événement est associé à un objet Event spécifique qui fournit des informations sur l'événement via ses propriétés.
 

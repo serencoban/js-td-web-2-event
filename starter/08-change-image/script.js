@@ -28,6 +28,27 @@ La méthode classique est de créer une variable temporaire, comme ceci :
 
 
 // version de base
+/**********
+const imgElement = document.querySelector('img');
+const src = imgElement.src;
+const dataHover = imgElement.dataset.hover;
+imgElement.addEventListener('click', function (evt){
+    if (evt.currentTarget.src === src){
+        evt.currentTarget.src = dataHover;
+    }else{        // quand on a deja une fois clické
+        evt.currentTarget.src = src;
+    }
+});
+*********/
 
+// on va permuter la valeur de l'attribut src avec la valeur d'attribut dataset
+
+document.querySelector('img').addEventListener('click', function (e){
+    [
+        e.currentTarget.src , e.currentTarget.dataset.hover
+    ]=[
+        e.currentTarget.dataset.hover, e.currentTarget.src
+    ]
+})
 
 // BONUS : switch entre les deux images

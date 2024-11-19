@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/styles.css" />
+        <script defer src="script.js"></script>
     </head>
     <body>
         <div class="container">
@@ -24,19 +25,18 @@
                     <form action="#" method="get">
                         <div class="field">
                             <label for="prenom">Prénom&nbsp;:</label>
-                            <input type="text" name="prenom" id="prenom">
+                            <input type="text" name="prenom" id="prenom" data-background-color="pink">
                             <br>
                             <label for="nom">Prénom&nbsp;:</label>
-                            <input type="text" name="nom" id="nom">
+                            <input type="text" name="nom" id="nom" data-background-color="pink">
                         </div>
                         <div class="actions">
-                            <button type="button" id="colorBtn">Contacte-moi !</button> <!-- à modifier en button de type submit si on veut un vrai formulaire qui soumet les données -->
+                            <button type="submit" id="colorBtn">Contacte-moi !</button> <!-- à modifier en button de type submit si on veut un vrai formulaire qui soumet les données -->
                         </div>
                     </form>
                 </section>
             </div>
         </div>
-        <script src="script.js"></script>
     </body>
 </html>
 

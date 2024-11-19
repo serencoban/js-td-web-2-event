@@ -9,3 +9,7 @@ EXERCICE 6 : Change couleur (3)
 */
 
 // ÉTAPE 1 : on ne gère que le clic
+
+document.getElementById("colorBtn").addEventListener('click', function changeCouleur(){
+
+})

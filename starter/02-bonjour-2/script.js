@@ -10,8 +10,11 @@
    * 2°) avec une fonction anonyme
    * 3°) avec une arrow fonction et une expression conditionnelle
 */
+document.querySelector('p').addEventListener('click' , function sayHello(){ console.log('bonjour')})
 
+document.querySelector('p').addEventListener('click' ,function (){ console.log('bonjour') })
 
+document.querySelector('p').addEventListener('click' , ()=>{ console.log('bonjour') })
 // Autre écriture
 
 
